@@ -1,75 +1,44 @@
 # FAQ
 Most frequently asked questions at nodium
 
-<b>How much coins do I need to run a masternode?</b>
-- 10,000 XN.
+<b>How many coins do I need to run a masternode?</b>
+- 10,000 XN
 
-<b>What is Masternode and staking reward?</b>
-- 90% Masternodes, 10% stakers.
+<b>What is the max. coin supply of XN?
+- 30,259,115 XN
 
-<b>How much is the total supply of Nodium?</b>
-- Refer to main coin specs, github.
+<b>What is the reward breakdown?</b>
+- 90% Masternodes, 10% PoS
 
 <b>Where can I download a wallet?</b>
-- Directly on our Github, wallets repository. Apple, Windows and Linux available.
+- Directly on our Github, wallets repository. Apple, Windows and Linux available. Or download it from our website http://nodium.org
 
-<b>Troubleshooting:</b>
-<br>
-Failed to Start Masternode
-<br>
-ERROR: Invalid IP Address
-<br>
-Hot Node requires remote activation
-<br>
-Node goes missing randomly and wallet open for more than 5 minutes
-<br>
+<b>Do you have a masternode setup guide and script?<</b>
+- Yes! https://github.com/nodiumproject/Masternode-setup-guide
 
-- Reboot the VPS, insert command when logged in:
-- sudo reboot
+<b>My deposit/withdraw from CryptoBridge is missing, why?</b>
+- Deposits and withdraws from CryptoBridge or others exchanges can have a delay. Check the coin info and news from the exchange if they have any issues at the moment. You can open a support ticket on the exchanhe if you find and issue on the exchange
 
-- After reboot, log back on the VPS and input:
+<b>Do you offer an escrow service to buy XN OTC</b>
+- No, unfortunately we do not offer this service. We recommend that you purchase all XN through CryptoBridge
 
-#DISCLAIMER: the daemon should auto start, so if this next command is run, it may throw an error stating it is running
-- ~/nodium/src/nodiumd -daemon
+<b>Somebody just private messaged me offering to sell me XN, is this safe? </b>
+- We recommend that you don't do this because it is possible that you may be scammed. It is much safer to carry out all  transactions on the exchange
 
-- Next, go to your (local) installed wallet. Click: Tools (Preferences on MacOS) > Debug Console, and input:
+<b>What does coin maximum age mean?</b>
+- This is the maximum amount of time that your coins continue to grow in weight
 
-#MN01 should be the alias of your masternode, correct this to your chosen alias.
-- startmasternode alias 0 "MN01"
+<b>Why has my coin age and weight stopped increasing ?</b>
+- This is because your coins have reached their maximum age
 
-- Switch back to the VPS and input:
-- ~/nodium/src/nodium-cli getmasternodestatus
+<b>What is the mature time of the coin and is my coin gaining weight when its maturing?</b>
+- Once your coins have been deposited into your wallet, they have staked, or you send coins to another person, the coins in the input from your wallet need to mature.  To do this they need  wait an initial time period of between  8 and 48 hours (usually 8 hours), during this time the coins are receiving confirmations from the network.  After the initial time period, for each confirmation your input receives,  you will see your weight increase. Until 10 days are reached, when it will stop gaining weight.
 
-- You should get the following result:
-- "status" : 4
-- "message" : "Masternode successfully started"
-<br>
+<b>I was on twitter and saw that you were giving away free <insert currency name> if I deposited  a smaller amount of currency to test the wallet was working. Is this offer real?</b>
+- No, this is a common scam. If we do give away XN, we will NEVER ask you to deposit coins first
 
-<b>Troubleshooting block out of sync:</b>
-<br>
-When the masternode blocks are out of sync, please do the following.
-
-- Login to your VPS and input:
-
-- ~/nodium/src/nodium-cli stop
-- ~/nodium/src/nodiumd -resync
-- ~/nodium/src/nodium-cli getinfo
-
-- When done, input:
-- sudo reboot
-
-- Next, go to your (local) installed wallet. Click: Tools (Preferences on MacOS) > Debug Console, and input:
-- #MN01 should be the alias of your masternode, correct this to your chosen alias.
-- startwallet alias 0 “mn1”
-
-- Switch back to the VPS and input:
-- ~/nodium/src/nodium-cli getmasternodestatus
-
-- You should get the following result:
-- "status" : 4
-- "message" : "Masternode successfully started"
-<br>
-Now you masternode should be on the most current block and you will have confirmed the masternode to be succesfully started.
+<b>My PC just crashed and now my  wallet will not open up, what should I do?</b>
+- Delete all files from your nodium folder EXCEPT wallet.dat and masternodes.conf (if you have any) and restart the nodium wallet.
 
 ---
 
