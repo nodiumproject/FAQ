@@ -7,7 +7,7 @@ Staking should start automatically once your coins mature and you unlock your wa
 Your wallet will need to remain open and unlocked for staking to receive a reward. Please see below for some guidance on staking.
 
 <b>Unlock to stake</b>
-To begin staking, download the Nodium wallet from https://nodium.org ,initialize it and send XN to a receiving address you own.
+To begin staking, download the Nodium wallet from http://nodium.org ,initialize it and send XN to a receiving address you own.
 
 If you have previously encrypted your wallet you must unlock it for staking, goto settings and click unlock wallet:
 ![Imgur](https://i.imgur.com/9VYRHSW.png)
