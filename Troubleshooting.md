@@ -48,3 +48,10 @@ Back on VPS:
 You should get this result:
 "status" : 4
 "message" : "Masternode successfully started"
+
+# Wallet
+<b>In the Nodium Wallet there are repair tools to fix common QT issues. Go to 'Tools' in the menu and select 'Wallet repair'</b>
+<br>
+![Imgur](https://i.imgur.com/13tW7J7.jpg)
+
+
