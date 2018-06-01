@@ -5,6 +5,7 @@
 - <b>VPS Syncing or Loading chain for too long</b>
 
 Log on to the VPS:
+```bash
 ~/nodium/src/nodium-cli stop
 cd nodium
 rm -Rf blocks 
@@ -13,44 +14,61 @@ rm -f mncache.dat
 rm -f peers.dat 
 rm -f .lock
 ~/nodium/src/nodiumd -daemon
-
+```
 Straight after. In Local Wallet. Tools > Debug Console, type:
-MN01 should be the alias of your masternode
+```bash
+# (MN01 should be the alias of your masternode)
 startmasternode alias 0 "MN01"
+```
 
 Back on VPS:
-~/nodium/src/nodium-cli getmasternodestatus
+`~/nodium/src/nodium-cli getmasternodestatus`
 
 You should get this result:
-"status" : 4
-"message" : "Masternode successfully started"
-
+```js
+{
+  // txhash, outputidx, netaddr, addr
+  "status" : 4,
+  "message" : "Masternode successfully started"
+}
+```
 
 - <b>Failed to Start Masternode</b><br>
 - <b>ERROR: Invalid IP Address</b><br>
 - <b>Hot Node requires remote activation</b><br>
 - <b>Node goes missing randomly and wallet open for more than 5 minutes</b><br>
 
-Reboot the server (through putty below):
+Reboot the server (through putty/terminal):
+```bash
 sudo reboot
+```
 
 Log back on and type:
-DISCLAIMER: the daemon should auto start, so if this next command is run, it may throw an error stating it is running
-~/nodium/src/nodiumd -daemon
+_DISCLAIMER: the daemon should auto start, so if this next command is run, it may throw an error stating it is running_
+`~/nodium/src/nodiumd -daemon`
 
 Straight after. In Local Wallet. Tools > Debug Console, type:
-MN01 should be the alias of your masternode
+```bash
+# (MN01 should be the alias of your masternode)
 startmasternode alias 0 "MN01"
+```
 
 Back on VPS:
+```bash
 ~/nodium/src/nodium-cli getmasternodestatus
+```
 
 You should get this result:
-"status" : 4
-"message" : "Masternode successfully started"
+```js
+{
+  // txhash, outputidx, netaddr, addr
+  "status" : 4,
+  "message" : "Masternode successfully started"
+}
+```
 
 # VPS
-# 5. Troubleshooting
+
 <b>Cannot bind port</b>
 When using another VPS provider (Microsoft Azure for example) as mentioned in this guide, you might not be able to directly bind the port to your external VPS IP. You will get an error at the end of the setup. In that case you need to bind it to your local IP. You can find the local IP by typing logging in to the VPS with the in the guide given user:
 * Type: `ifconfig`  ENTER
@@ -68,7 +86,7 @@ This is pretty generic (Microsoft Azure example) please follow the hoster guides
 ![Imgur](https://i.imgur.com/YcNrWKF.png)
 <br>
 Next, back on the VPS:
-* Type: ~/nodium/src/nodiumd -daemon
+* Type: `~/nodium/src/nodiumd -daemon`
 Now it will start the Nodium NM using the new settings you just made.
 
 # Wallet
