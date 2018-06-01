@@ -4,7 +4,7 @@ Most frequently asked questions at nodium
 <b>How many coins do I need to run a masternode?</b>
 - 10,000 XN
 
-<b>What is the max. coin supply of XN?
+<b>What is the max. coin supply of XN?</b>
 - 30,259,115 XN
 
 <b>What is the reward breakdown?</b>
