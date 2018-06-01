@@ -16,6 +16,19 @@ If you have previously encrypted your wallet you must unlock it for staking, got
 Next, enter your password. <b>Make sure you check: For anonymization and staking only</b>
 ![Imgur](https://i.imgur.com/8OXAe0C.png)
 
+<b>How to 'force' staking on/off</b>
+Open the wallet. Tools >  Open Wallet Config File, add the line staking=1 for ON or staking=0 for OFF
+![Imgur](https://i.imgur.com/lV5BwIl.png)
+
+<b>How to set inputs not to split after get stake?</b>
+In the debug console type setstakesplitthreshold <1 - 9999999>, <1 - 9999999> is the amount. When the input is big enough to split in set amount the split will happen. for example setstakesplitthreshold 500 and your input is bigger than 1000 the input will split, if it's less than 1000 will not. 
+
+<b>What is the best input amount?</b>
+Best input amount for staking depends from the network weight. Network weight is the sum of all staking coins. More coins is staking faster.
+
+<b>When do coins start staking?</b>
+When the minimum mature time is reached, 1 hour
+
 <b>Troubleshooting</b>
 - How to start Staking?
 - Troubleshoot Staking Activation
@@ -39,7 +52,3 @@ The output should show all as True. If this is the case, be patient.
 - enoughcoins :if false, you need more coins unlocked. There should be no minimum.
 - mnsync :if false, wait 20 minutes. If still false consider an mnsync reset.
 - staking status :if all of the above is True and this is still False, first try, close the wallet for 30 seconds, open and unlock (if encrypted), wait 5 minutes.
-
-<b>How to turn staking on/off</b>
-Open the wallet. Tools >  Open Wallet Config File, add the line Staking=1 for ON or Staking=0 for OFF
-![Imgur](https://i.imgur.com/lV5BwIl.png)
