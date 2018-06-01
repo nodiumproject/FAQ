@@ -43,6 +43,8 @@ Most frequently asked questions at nodium
 <b>I just opened my wallet and my masternode is MISSING</b>
 - Give it some time, wait for 10 minutes. The wallet needs some time to discover all the masternodes in the network.
 
+<b>What is Coin Control and how to use it?</b>
+- https://steemit.com/nodium/@cryptorens/nodium-coin-control-guide
 ---
 
 Will be continuously be updated.
