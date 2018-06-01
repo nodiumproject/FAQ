@@ -11,9 +11,9 @@ Most frequently asked questions at nodium
 - 90% Masternodes, 10% PoS
 
 <b>Where can I download a wallet?</b>
-- Directly on our Github, wallets repository. Apple, Windows and Linux available. Or download it from our website http://nodium.org
+- Directly on our Github, wallets repository. Apple, Windows and Linux available. Ofcourse you can also download it from our website http://nodium.org
 
-<b>Do you have a masternode setup guide and script?<</b>
+<b>Do you have a masternode setup guide and script?</b>
 - Yes! https://github.com/nodiumproject/Masternode-setup-guide
 
 <b>My deposit/withdraw from CryptoBridge is missing, why?</b>
@@ -22,7 +22,7 @@ Most frequently asked questions at nodium
 <b>Do you offer an escrow service to buy XN OTC</b>
 - No, unfortunately we do not offer this service. We recommend that you purchase all XN through CryptoBridge
 
-<b>Somebody just private messaged me offering to sell me XN, is this safe? </b>
+<b>Somebody just private messaged me offering to sell me XN, is this safe?</b>
 - We recommend that you don't do this because it is possible that you may be scammed. It is much safer to carry out all  transactions on the exchange
 
 <b>What does coin maximum age mean?</b>
@@ -39,6 +39,9 @@ Most frequently asked questions at nodium
 
 <b>My PC just crashed and now my  wallet will not open up, what should I do?</b>
 - Delete all files from your nodium folder EXCEPT wallet.dat and masternodes.conf (if you have any) and restart the nodium wallet.
+
+<b>I just opened my wallet and my masternode is MISSING</b>
+- Give it some time, wait for 10 minutes. The wallet needs some time to discover all the masternodes in the network.
 
 ---
 
