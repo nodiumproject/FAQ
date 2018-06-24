@@ -5,7 +5,7 @@ Most frequently asked questions at nodium
 - 10,000 XN
 
 <b>What is the max. coin supply of XN?</b>
-- 30,259,115 XN
+- 29,259,115 XN
 
 <b>What is the reward breakdown?</b>
 - 90% Masternodes, 10% PoS
